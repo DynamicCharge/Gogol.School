@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Project Name - описание">
+  <!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+  <!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+  <!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
+<link color="#c84659" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+<link href="favicon/favicon.ico" rel="shortcut icon">
+<meta content="#ffffff" name="msapplication-TileColor">
+<meta content="favicon/browserconfig.xml" name="msapplication-config">
+<meta content="#ffffff" name="theme-color">
+ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d7f796e6-b982-4f3a-9dae-e214d0513617&lang=ru_RU" type="text/javascript"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src=" https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/jquery.inputmask.min.js "></script>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Svai — Главная</title>
+</head>
+
+<body>
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="arrow-left" viewBox="0 0 62 16">
+        <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM61 9.00001C61.5523 9.00001 62 8.55229 62 8.00001C62 7.44772 61.5523 7.00001 61 7.00001L61 9.00001ZM1 9L61 9.00001L61 7.00001L1 7L1 9Z" fill="#EF9B7E" />
+      </symbol>
+      <symbol id="arrow-right" viewBox="0 0 62 16">
+        <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM61.7071 8.70711C62.0976 8.31659 62.0976 7.68342 61.7071 7.2929L55.3431 0.928937C54.9526 0.538413 54.3195 0.538412 53.9289 0.928937C53.5384 1.31946 53.5384 1.95263 53.9289 2.34315L59.5858 8.00001L53.9289 13.6569C53.5384 14.0474 53.5384 14.6805 53.9289 15.0711C54.3195 15.4616 54.9526 15.4616 55.3431 15.0711L61.7071 8.70711ZM1 9L61 9.00001L61 7.00001L1 7L1 9Z" fill="#EF9B7E" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 20 20">
+        <path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z" />
+      </symbol>
+    </svg>
+  </div>
+  <div class="wrapper">
+    <header class="header ">
+      <div class="header__wrapper" data-accordion="parent">
+        <div class="header__left">
+          <div class="header__burger" data-burger>
+            <div class="header__burger-btn">
+              <div class="header__burger-inner">
+                <div class="header__burger-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="header__socials">
+            <a href="" class="header__social"><img src="../img/svg/vk.svg" alt=""></a>
+            <a href="" class="header__social"><img src="../img/svg/yt.svg" alt=""></a>
+            <a href="" class="header__social"><img src="../img/svg/tg.svg" alt=""></a>
+          </div>
+          <div class="header__burger-list" data-burger-list>
+            <div class="header__burger-list__inner">
+              <a href="" class="header__burger-link">о школе</a>
+              <a href="" class="header__burger-link">как устроен процесс</a>
+              <a href="" class="header__burger-link">мастера</a>
+              <a href="" class="header__burger-link">программы</a>
+              <a href="" class="header__burger-link">пробные занятия</a>
+              <a href="" class="header__burger-link">для бизнеса</a>
+              <a href="" class="header__burger-link">контакты</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__right">
+          <a href="" class="header__btn page-btn">Подписаться на новости</a>
+          <img src="../img/svg/logo.svg" alt="" class="header__logo">
+        </div>
+      </div>
+    </header>
+    <!-- <div class="header-overlay"></div> -->
+    <main>
+      <section class="title">
+        <img src="../img/content/title.jpg" alt="" class="title__bg">
+        <div class="container">
+          <div class="title__wrapper">
+            <div class="title__main">
+              <div class="spacer"></div>
+              <div class="title__info">
+                <p class="title__text page-text-20 --fw700 --uppercase">Творческая лаборатория для непрекращающегося исследования себя в безопасной среде</p>
+                <a href="" class="title__btn page-btn --orange">Выбрать курс</a>
+              </div>
+            </div>
+            <img src="../img/svg/footer-text.svg" alt="" class="title__bottom">
+          </div>
+        </div>
+      </section>
+      <section class="programms">
+        <div class="container">
+          <div class="programms__wrapper">
+            <h2 class="programms__header page-h2 --uppercase">Ближайшие программы</h2>
+            <div class="programms__items">
+              <a href="" class="programms__item">
+                <img src="../img/content/item-bg.jpg" alt="" class="programms__item-bg">
+                <div class="programms__item-top">
+                  <div class="programms__item-type page-text-14">Лаборатория</div>
+                  <div class="programms__item-tags">
+                    <div class="programms__item-tag page-text-14">Москва</div>
+                    <div class="programms__item-tag page-text-14 --orange">Sold Out</div>
+                  </div>
+                </div>
+                <div class="programms__item-body">
+                  <span class="programms__item-author page-text-14 --uppercase">
+                    <span>НИКИТА ПЕТРОВ</span>
+                    <span>ТАТЬЯНА МЕЛЬНИКОВА</span>
+                  </span>
+                  <span class="programms__item-date page-text-14 --fw700">17 сентября - 17 декабря</span>
+                  <span class="programms__item-place page-text-20 --fw700 --uppercase">LAB-1</span>
+                </div>
+              </a>
+              <a href="" class="programms__item">
+                <img src="../img/content/item-bg.jpg" alt="" class="programms__item-bg">
+                <div class="programms__item-top">
+                  <div class="programms__item-type page-text-14">Лаборатория</div>
+                  <div class="programms__item-tags">
+                    <div class="programms__item-tag page-text-14">Москва</div>
+                    <div class="programms__item-tag page-text-14 --orange">Sold Out</div>
+                  </div>
+                </div>
+                <div class="programms__item-body">
+                  <span class="programms__item-author page-text-14 --uppercase">
+                    <span>НИКИТА ПЕТРОВ</span>
+                    <span>ТАТЬЯНА МЕЛЬНИКОВА</span>
+                  </span>
+                  <span class="programms__item-date page-text-14 --fw700">17 сентября - 17 декабря</span>
+                  <span class="programms__item-place page-text-20 --fw700 --uppercase">LAB-1</span>
+                </div>
+              </a>
+              <a href="" class="programms__item">
+                <img src="../img/content/item-bg.jpg" alt="" class="programms__item-bg">
+                <div class="programms__item-top">
+                  <div class="programms__item-type page-text-14">Лаборатория</div>
+                  <div class="programms__item-tags">
+                    <div class="programms__item-tag page-text-14">Москва</div>
+                    <div class="programms__item-tag page-text-14 --orange">Sold Out</div>
+                  </div>
+                </div>
+                <div class="programms__item-body">
+                  <span class="programms__item-author page-text-14 --uppercase">
+                    <span>НИКИТА ПЕТРОВ</span>
+                    <span>ТАТЬЯНА МЕЛЬНИКОВА</span>
+                  </span>
+                  <span class="programms__item-date page-text-14 --fw700">17 сентября - 17 декабря</span>
+                  <span class="programms__item-place page-text-20 --fw700 --uppercase">LAB-1</span>
+                </div>
+              </a>
+              <a href="" class="programms__item">
+                <img src="../img/content/item-bg.jpg" alt="" class="programms__item-bg">
+                <div class="programms__item-top">
+                  <div class="programms__item-type page-text-14">Лаборатория</div>
+                  <div class="programms__item-tags">
+                    <div class="programms__item-tag page-text-14">Москва</div>
+                    <div class="programms__item-tag page-text-14 --orange">Sold Out</div>
+                  </div>
+                </div>
+                <div class="programms__item-body">
+                  <span class="programms__item-author page-text-14 --uppercase">
+                    <span>НИКИТА ПЕТРОВ</span>
+                    <span>ТАТЬЯНА МЕЛЬНИКОВА</span>
+                  </span>
+                  <span class="programms__item-date page-text-14 --fw700">17 сентября - 17 декабря</span>
+                  <span class="programms__item-place page-text-20 --fw700 --uppercase">LAB-1</span>
+                </div>
+              </a>
+            </div>
+            <a href="" class="programms__items-link page-link">Все программы <img src="../img/svg/link.svg" alt=""></a>
+          </div>
+        </div>
+      </section>
+      <section class="programms">
+        <div class="container">
+          <div class="programms__wrapper">
+            <h2 class="programms__header page-h2 --uppercase">Ближайшие программы</h2>
+            <div class="programms__items">
+              <a href="" class="masters__item">
+                <div class="masters__item-img"><img src="../img/content/master.jpg" alt=""></div>
+                <span class="masters__item-name page-text-14 --uppercase --fw700">ДМИТРИЙ СЕВЕРИН</span>
+                <span class="masters__item-post page-text-14 --fw700">Актер</span>
+              </a>
+              <a href="" class="masters__item">
+                <div class="masters__item-img"><img src="../img/content/master.jpg" alt=""></div>
+                <span class="masters__item-name page-text-14 --uppercase --fw700">ДМИТРИЙ СЕВЕРИН</span>
+                <span class="masters__item-post page-text-14 --fw700">Актер</span>
+              </a>
+              <a href="" class="masters__item">
+                <div class="masters__item-img"><img src="../img/content/master.jpg" alt=""></div>
+                <span class="masters__item-name page-text-14 --uppercase --fw700">ДМИТРИЙ СЕВЕРИН</span>
+                <span class="masters__item-post page-text-14 --fw700">Актер</span>
+              </a>
+              <a href="" class="masters__item">
+                <div class="masters__item-img"><img src="../img/content/master.jpg" alt=""></div>
+                <span class="masters__item-name page-text-14 --uppercase --fw700">ДМИТРИЙ СЕВЕРИН</span>
+                <span class="masters__item-post page-text-14 --fw700">Актер</span>
+              </a>
+            </div>
+            <a href="" class="programms__items-link page-link">Все мастера <img src="../img/svg/link.svg" alt=""></a>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <div class="faq__wrapper">
+            <h2 class="faq__header page-h2">частые вопросы</h2>
+            <div class="faq__items" data-accordion="parent">
+              <div class="faq__item" data-accordion="element">
+                <div class="faq__btn page-text-14 --fw700 --uppercase" data-accordion="button">Даете ли вы рассрочку? <img src="../img/svg/acc-icon.svg" alt=""></div>
+                <div class="faq__content" data-accordion="content">
+                  <div class="faq__content-inner">
+                    <div class="page-text-14">
+                      Это разовые занятия по три часа, посвященные определенной теме. Например, тому, как быть в ситуациях, когда все идет не по сценарию, или как переработать страх публичности в ресурс, который будет помогать.
+                      <br><br>
+                      Занятия по абонементам — это возможность поработать с конкретной темой, решить определенный запрос и попробовать то, что интересно, а также познакомиться с Gogol School, мастерами и подходом.
+                      Купить абонемент для себя или в подарок и записаться на занятия можно в телеграм-боте.
+                      <br><br>
+                      Участие возможно для всех желающих с 18 лет, вне зависимости от опыта и навыков.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item" data-accordion="element">
+                <div class="faq__btn page-text-14 --fw700 --uppercase" data-accordion="button">Даете ли вы рассрочку? <img src="../img/svg/acc-icon.svg" alt=""></div>
+                <div class="faq__content" data-accordion="content">
+                  <div class="faq__content-inner">
+                    <div class="page-text-14">
+                      Это разовые занятия по три часа, посвященные определенной теме. Например, тому, как быть в ситуациях, когда все идет не по сценарию, или как переработать страх публичности в ресурс, который будет помогать.
+                      <br><br>
+                      Занятия по абонементам — это возможность поработать с конкретной темой, решить определенный запрос и попробовать то, что интересно, а также познакомиться с Gogol School, мастерами и подходом.
+                      Купить абонемент для себя или в подарок и записаться на занятия можно в телеграм-боте.
+                      <br><br>
+                      Участие возможно для всех желающих с 18 лет, вне зависимости от опыта и навыков.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item" data-accordion="element">
+                <div class="faq__btn page-text-14 --fw700 --uppercase" data-accordion="button">Даете ли вы рассрочку? <img src="../img/svg/acc-icon.svg" alt=""></div>
+                <div class="faq__content" data-accordion="content">
+                  <div class="faq__content-inner">
+                    <div class="page-text-14">
+                      Это разовые занятия по три часа, посвященные определенной теме. Например, тому, как быть в ситуациях, когда все идет не по сценарию, или как переработать страх публичности в ресурс, который будет помогать.
+                      <br><br>
+                      Занятия по абонементам — это возможность поработать с конкретной темой, решить определенный запрос и попробовать то, что интересно, а также познакомиться с Gogol School, мастерами и подходом.
+                      Купить абонемент для себя или в подарок и записаться на занятия можно в телеграм-боте.
+                      <br><br>
+                      Участие возможно для всех желающих с 18 лет, вне зависимости от опыта и навыков.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item" data-accordion="element">
+                <div class="faq__btn page-text-14 --fw700 --uppercase" data-accordion="button">Даете ли вы рассрочку? <img src="../img/svg/acc-icon.svg" alt=""></div>
+                <div class="faq__content" data-accordion="content">
+                  <div class="faq__content-inner">
+                    <div class="page-text-14">
+                      Это разовые занятия по три часа, посвященные определенной теме. Например, тому, как быть в ситуациях, когда все идет не по сценарию, или как переработать страх публичности в ресурс, который будет помогать.
+                      <br><br>
+                      Занятия по абонементам — это возможность поработать с конкретной темой, решить определенный запрос и попробовать то, что интересно, а также познакомиться с Gogol School, мастерами и подходом.
+                      Купить абонемент для себя или в подарок и записаться на занятия можно в телеграм-боте.
+                      <br><br>
+                      Участие возможно для всех желающих с 18 лет, вне зависимости от опыта и навыков.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="partners__wrapper">
+          <div class="partners__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+              <div class="partners__slide swiper-slide"><img src="../img/svg/part-1.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="container">
+        <p><a href="#" data-open-modal="feedback">modal--feedback link</a></p>
+        <p><a href="#" data-open-modal="success">modal--success link</a></p>
+      </div> -->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__grid">
+            <div class="footer__col --left">
+              <a href="" class="footer__mail --uppercase">info@gogol.school</a>
+              <div class="footer__nav">
+                <a href="" class="footer__link --uppercase">О школе</a>
+                <a href="" class="footer__link --uppercase">Как устроен процесс</a>
+                <a href="" class="footer__link --uppercase">Мастера</a>
+                <a href="" class="footer__link --uppercase">Программы</a>
+                <a href="" class="footer__link --uppercase">Пробные занятия</a>
+                <a href="" class="footer__link --uppercase">Для бизнеса</a>
+                <a href="" class="footer__link --uppercase">Контакты</a>
+              </div>
+              <a href="" class="footer__policy --uppercase">Политика конфиденциальности</a>
+            </div>
+            <div class="footer__col">
+              <div class="footer__info">
+                <span class="footer__info-header">Адрес:</span>
+                <p class="footer__info-val">Москва <br>ул. Казакова, 8с3, ст. метро Курская</p>
+              </div>
+              <div class="footer__docs">
+                <p class="footer__docs-text">
+                  ООО “Гоголь Школа”<br>
+                  ОГРН 1197746522038<br>
+                  ИНН 9709053471
+                </p>
+                <p class="footer__docs-text">
+                  ИП Ромашко Илья Геннадьевич<br>
+                  ОГРНИП 315774600246366<br>
+                  ИНН 773006544817
+                </p>
+              </div>
+            </div>
+            <div class="footer__col">
+              <div class="footer__col-wrap">
+                <div class="footer__info">
+                  <span class="footer__info-header">Телефон:</span>
+                  <a href="" class="footer__info-val">+7 [495] 180-46-80</a>
+                </div>
+                <div class="footer__info">
+                  <span class="footer__info-header">Социальные сети:</span>
+                  <a href="" class="footer__info-val">@gogolschool</a>
+                </div>
+              </div>
+              <div class="footer__docs">
+                <p class="footer__docs-text">
+                  2015-2024 GOGOL School любое использование либо копирование материалов или подборки материалов сайта, элементов дизайна и оформления допускается лишь с разрешения правообладателя и только со ссылкой на источник: gogolschool.ru
+                </p>
+                <div class="footer__docs-nav">
+                  <a href="" class="footer__docs-text">Дизайн сайта</a>
+                  <a href="" class="footer__docs-text">Разработка сайта</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="../img/svg/footer-text.svg" alt="" class="footer__bottom">
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
