@@ -31,47 +31,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src=" https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/jquery.inputmask.min.js "></script>
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Компоненты</title>
-  <style>
-    main>.container {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    .components-backwards {
-      display: inline-block;
-      margin-bottom: 10px;
-      margin-left: 7px;
-    }
-
-    .components-backwards span:first-child {
-      position: relative;
-      top: -3px;
-      display: inline-block;
-      margin-right: 15px;
-      font-size: 16px;
-      line-height: 24px;
-      vertical-align: top;
-      transform: scale(2);
-    }
-
-    .components-backwards span:last-child {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    .components-backwards+h1 {
-      margin-bottom: 0;
-    }
-
-    .container>section {
-      padding: 20px 0;
-    }
-
-    .btn {
-      margin: 10px 0;
-    }
-  </style>
+  <title>Gogol.School — Главная</title>
 </head>
 
 <body>
@@ -150,25 +110,71 @@
     </header>
     <!-- <div class="header-overlay"></div> -->
     <main>
-      <div class="container">
-        <a class="components-backwards" href="index.html">
-          <span>&larr;</span>
-          <span>вернуться на разводящую</span>
-        </a>
-        <h1>Компоненты, используемые в вёрстке</h1>
-        <section>
-          <h2>Название компонента или группы компонентов</h2>
-          <p>Класс компонента \ модификаторы</p>
-          <p style="color: red;">При необходимости, подсказки \ предупреждение \ важная информация</p>
-          <div>Компонент</div>
-        </section>
-        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
-        <!-- <section>
-          <h2></h2>
-
-          <p></p>
-        </section> -->
-      </div>
+      <section class="title --page">
+        <img src="../img/content/process-title.jpg" alt="" class="title__bg --desc">
+        <img src="../img/content/process-title-mob.jpg" alt="" class="title__bg --mob">
+        <div class="container">
+          <div class="title__wrapper">
+            <div class="title__main">
+              <div class="spacer"></div>
+              <div class="title__info">
+                <!-- <p class="title__text page-text-20 --fw700 --uppercase">Творческая лаборатория для непрекращающегося исследования себя в безопасной среде</p>
+                <a href="" class="title__btn page-btn --orange">Выбрать курс</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="process">
+        <div class="container">
+          <div class="process__wrapper">
+            <div class="process__left">
+              <h2 class="process__header page-h2 --fw700 --uppercase">как устроен процесс</h2>
+            </div>
+            <div class="process__right">
+              <div class="process__title page-text-14 --fw700 --uppercase">
+                Практики Gogol School – это комплекс из актерских и телесных тренингов, объединенных важными принципами
+              </div>
+              <div class="process__items">
+                <div class="process__item page-text-14 --fw700">
+                  <div class="">
+                    <span>Безоценочное пространство</span> – возможность на время отложить привычные суждения о себе и других, чтобы открыться новому опыту
+                  </div>
+                </div>
+                <div class="process__item page-text-14 --fw700">
+                  <div class="">
+                    <span>Расширение зоны комфорта</span> – помогает выйти за рамки внутренних ограничений, почувствовать радость от открытия – “ого, я так тоже могу!”
+                  </div>
+                </div>
+                <div class="process__item page-text-14 --fw700">
+                  <div class="">
+                    <span>Позиция исследователя</span> – останавливает перфекционизм и гонку за результатом, помогает следовать за любопытством и интересом
+                  </div>
+                </div>
+                <div class="process__item page-text-14 --fw700">
+                  <div class="">
+                    <span>Игровой формат</span> – позволяет снизить градус серьезности, не бояться ошибки
+                  </div>
+                </div>
+                <div class="process__item page-text-14 --fw700">
+                  <div class="">
+                    <span>Поддерживающая безопасная атмосфера</span> – способствует открытому проявлению эмоций, развитию эмпатии и чувствительности
+                  </div>
+                </div>
+                <div class="process__item page-text-14 --fw700">
+                  <div class="">
+                    <span>Групповая динамика</span> – взаимодействие с другими ярче подсвечивает внутренние процессы, а еще создавать и придумывать вместе – отдельный вид удовольствия
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="container">
+        <p><a href="#" data-open-modal="feedback">modal--feedback link</a></p>
+        <p><a href="#" data-open-modal="success">modal--success link</a></p>
+      </div> -->
     </main>
     <footer class="footer">
       <div class="container">

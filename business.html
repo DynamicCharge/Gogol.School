@@ -31,47 +31,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src=" https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/jquery.inputmask.min.js "></script>
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Компоненты</title>
-  <style>
-    main>.container {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    .components-backwards {
-      display: inline-block;
-      margin-bottom: 10px;
-      margin-left: 7px;
-    }
-
-    .components-backwards span:first-child {
-      position: relative;
-      top: -3px;
-      display: inline-block;
-      margin-right: 15px;
-      font-size: 16px;
-      line-height: 24px;
-      vertical-align: top;
-      transform: scale(2);
-    }
-
-    .components-backwards span:last-child {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    .components-backwards+h1 {
-      margin-bottom: 0;
-    }
-
-    .container>section {
-      padding: 20px 0;
-    }
-
-    .btn {
-      margin: 10px 0;
-    }
-  </style>
+  <title>Gogol.School — Главная</title>
 </head>
 
 <body>
@@ -150,25 +110,77 @@
     </header>
     <!-- <div class="header-overlay"></div> -->
     <main>
-      <div class="container">
-        <a class="components-backwards" href="index.html">
-          <span>&larr;</span>
-          <span>вернуться на разводящую</span>
-        </a>
-        <h1>Компоненты, используемые в вёрстке</h1>
-        <section>
-          <h2>Название компонента или группы компонентов</h2>
-          <p>Класс компонента \ модификаторы</p>
-          <p style="color: red;">При необходимости, подсказки \ предупреждение \ важная информация</p>
-          <div>Компонент</div>
-        </section>
-        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
-        <!-- <section>
-          <h2></h2>
-
-          <p></p>
-        </section> -->
-      </div>
+      <section class="title --page">
+        <img src="../img/content/business-title.jpg" alt="" class="title__bg --desc">
+        <img src="../img/content/business-title-mob.jpg" alt="" class="title__bg --mob">
+        <div class="container">
+          <div class="title__wrapper">
+            <div class="title__main">
+              <div class="spacer"></div>
+              <div class="title__info">
+                <!-- <p class="title__text page-text-20 --fw700 --uppercase">Творческая лаборатория для непрекращающегося исследования себя в безопасной среде</p>
+                <a href="" class="title__btn page-btn --orange">Выбрать курс</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-grid">
+        <div class="container">
+          <div class="text-grid__wrapper">
+            <div class="text-grid__left">
+              <h2 class="text-grid__header page-h2">Для бизнеса</h2>
+            </div>
+            <div class="text-grid__right">
+              <div class="text-grid-val page-text-14 --fw700">
+                Компетенции Gogol School не ограничиваются театральным мастерством. Актерские практики содержат в себе большую глубину и мощное трансформирующее зерно, развивают навыки, которые легко применить в бизнесе.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="programs">
+        <div class="container">
+          <div class="programs__wrapper">
+            <div class="programs__items">
+              <div class="programs__item">
+                <div class="programs__item-name page-h2 --uppercase"><span>1.</span> b2b-программы</div>
+                <div class="programs__item-grid">
+                  <div class="programs__item-img"><img src="../img/content/program.png" alt=""></div>
+                  <div class="programs__item-info">
+                    <span class="programs__item-info__header page-text-14 --fw700 --uppercase">О ПРОГРАММАХ</span>
+                    <div class="programs__item-info__text">
+                      <p class="page-text-14 --fw700">
+                        Актерские техники отлично адаптируются под запросы бизнеса, где важным качеством является умение эффективно выстраивать доверительные отношения в долгосрочной перспективе. Мы не даем простых решений, и понимаем, что деловые отношения — сложный многомерный процесс. Мы помогаем увидеть перспективу, из которой можно изменить качество отношений и своего влияния на процессы.
+                      </p>
+                      <a href="" class="programs__item-info__link page-link">Подробнее <img src="../img/svg/link.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="programs__item">
+                <div class="programs__item-name page-h2 --uppercase"><span>2.</span> gogol school. head</div>
+                <div class="programs__item-grid">
+                  <div class="programs__item-img"><img src="../img/content/program.png" alt=""></div>
+                  <div class="programs__item-info">
+                    <span class="programs__item-info__header page-text-14 --fw700 --uppercase">О КУРСЕ</span>
+                    <div class="programs__item-info__text">
+                      <p class="page-text-14 --fw700">
+                        Авторский курс, посвященный работе над аутентичностью — навыком честной и гармоничной трансляции личности в деловой среде. Gogol School предлагает уникальные техники знакомства с собой и своей органиком, которые помогут в построении образа для внешнего мира.
+                      </p>
+                      <a href="" class="programs__item-info__link page-link">Подробнее <img src="../img/svg/link.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="container">
+        <p><a href="#" data-open-modal="feedback">modal--feedback link</a></p>
+        <p><a href="#" data-open-modal="success">modal--success link</a></p>
+      </div> -->
     </main>
     <footer class="footer">
       <div class="container">
