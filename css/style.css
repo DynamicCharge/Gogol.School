@@ -1687,6 +1687,63 @@ html .--fw500 {
   color: #fff;
 }
 
+.contacts {
+  padding: 150px 0;
+}
+
+.contacts .contacts__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 0;
+}
+
+.contacts .contacts__header {
+  margin: 0;
+}
+
+.contacts .contacts__header span {
+  font: inherit;
+  display: block;
+}
+
+.contacts .contacts__header span:nth-child(1) {
+  color: #d64e34;
+}
+
+.contacts .contacts__header span:nth-child(2) {
+  color: #000000;
+}
+
+.contacts .contacts__header span:nth-child(3) {
+  color: #A6A7AB;
+}
+
+.contacts .contacts__link {
+  margin-top: 38px;
+  display: block;
+  color: #a6a7ab;
+}
+
+.contacts .contacts__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 10px;
+}
+
+.contacts .contacts__name {
+  display: block;
+  color: #a6a7ab;
+  margin-bottom: 14px;
+}
+
+.contacts .contacts__val {
+  display: block;
+}
+
 @media screen and (min-width: 1050px) {
   .partners .container {
     max-width: 100%;
@@ -1707,6 +1764,10 @@ html .--fw500 {
 
   .footer .footer__grid {
     gap: 20px;
+  }
+
+  .contacts {
+    padding: 100px 0;
   }
 
   .text-grid {
@@ -1803,6 +1864,17 @@ html .--fw500 {
 
   .page-text-20 {
     font-size: 14px;
+  }
+
+  .contacts .contacts__items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .contacts .contacts__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .text-grid .text-grid__wrapper {
