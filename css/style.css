@@ -1234,6 +1234,12 @@ html .--fw500 {
   border-color: #d64e34;
 }
 
+.page-btn.--black {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+
 .page-link {
   font-size: 16px;
   font-weight: 700;
@@ -1511,7 +1517,7 @@ html .--fw500 {
   display: inline-block;
 }
 
-.programms .programs__empty {
+.programms .programs__empty.programms__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1822,6 +1828,10 @@ html .--fw500 {
   padding: 75px 0 150px;
 }
 
+.programs .programs__mobile {
+  display: none;
+}
+
 .programs .programs__items {
   display: -ms-grid;
   display: grid;
@@ -1888,6 +1898,18 @@ html .--fw500 {
 
 .programs .programs__item-info__link {
   color: #fff;
+}
+
+.programs .programs__item-bottom {
+  margin-top: 20px;
+}
+
+.programs .programs__item-bottom__name {
+  margin-bottom: 5px;
+}
+
+.programs .programs__item-bottom__post {
+  color: #a6a7ab;
 }
 
 .contacts {
@@ -2201,6 +2223,318 @@ html .--fw500 {
   color: #fff;
 }
 
+.detail {
+  padding: 150px 0 75px;
+}
+
+.detail .detail__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 76px 137px;
+}
+
+.detail .detail__col.--main {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+.detail .detail__col.--main .detail__col-val {
+  color: #d64e34;
+  margin: 0;
+}
+
+.detail .detail__col-header {
+  display: block;
+  margin-bottom: 14px;
+  color: #a6a7ab;
+}
+
+.detail .detail__col-val {
+  display: block;
+}
+
+.detail .detail__info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 51px;
+  color: #fff;
+  padding: 25px;
+  background: #EBA79A;
+  border-radius: 10px 10px 0 10px;
+  margin-top: 70px;
+}
+
+.detail .detail__info-header {
+  margin: 0;
+}
+
+.cost {
+  padding: 75px 0 75px;
+}
+
+.cost .cost__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.cost .cost__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.cost .cost__info {
+  max-width: 336px;
+  width: 100%;
+}
+
+.cost .cost__name {
+  color: #a6a7ab;
+  max-width: 233px;
+  width: 100%;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.cost .cost__date {
+  color: #a6a7ab;
+  max-width: 233px;
+  width: 100%;
+  display: block;
+}
+
+.cost .cost__date * {
+  font: inherit;
+}
+
+.cost .cost__price {
+  display: block;
+  margin-top: 14px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31.2px;
+  color: #d64e34;
+}
+
+.cost .cost__terms {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  color: #a6a7ab;
+  margin-top: auto;
+}
+
+.cost .cost__form {
+  padding: 25px;
+  border-radius: 10px 0 10px 10px;
+  background: #eba79a;
+  color: #fff;
+}
+
+.cost .cost__form-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 102px;
+}
+
+.cost .cost__form-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.cost .cost__form-label {
+  display: block;
+  width: 100%;
+}
+
+.cost .cost__form-label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.cost .cost__form-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  font-weight: 700;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 14px;
+  color: #fff;
+  width: 100%;
+}
+
+.cost .cost__form-type__wrap label {
+  margin-bottom: 0 !important;
+}
+
+.cost .cost__form-type__wrap.is-active .cost__form-type__content {
+  display: block;
+}
+
+.cost .cost__form-type__wrap:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.cost .cost__form-text {
+  margin-bottom: 15px;
+}
+
+.cost .cost__form-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  position: relative;
+  cursor: pointer;
+}
+
+.cost .cost__form-type:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.cost .cost__form-type__content {
+  display: none;
+}
+
+.cost .cost__form-type__content .cost__form-type {
+  padding-left: 19px;
+}
+
+.cost .cost__form-type__content .cost__form-type:first-child {
+  margin-top: 10px;
+}
+
+.cost .cost__form-type__content .cost__form-type:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.cost .cost__form-type__content .cost__form-desc {
+  font-size: 10px;
+  color: #d64e34;
+}
+
+.cost .cost__form-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cost .cost__form-radio:checked + .cost__form-custom {
+  background: #d64e34;
+}
+
+.cost .cost__form-custom {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  background: #d2d3d5;
+  margin-right: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cost .cost__form-desc {
+  line-height: 16px;
+}
+
+.cost .cost__form-price {
+  margin-bottom: 0;
+  color: #d64e34;
+  margin-top: auto;
+}
+
+.cost .cost__form-submit {
+  max-width: 270px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.cost .gift {
+  padding-left: 19px;
+  padding-top: 15px;
+  padding-right: 20px;
+}
+
+.cost .gift .cost__form-type {
+  padding-left: 0;
+}
+
+.cost .gift .cost__form-desc {
+  color: #fff;
+}
+
+.cost .gift__label {
+  display: block;
+}
+
+.cost .gift__label:not(:last-child) {
+  margin-bottom: 10px !important;
+}
+
+.cost .gift__input {
+  border-color: #000;
+  padding-bottom: 10px;
+  color: #000;
+  font-size: 10px;
+  display: block;
+  width: 100%;
+}
+
+.cost + .programms {
+  padding-top: 75px;
+}
+
+.detail-decor {
+  position: absolute;
+  z-index: -1;
+}
+
+.detail-decor.--1 {
+  top: 500px;
+  right: 0;
+}
+
+.detail-decor.--2 {
+  bottom: 710px;
+  left: 0;
+}
+
 @media screen and (min-width: 1050px) {
   .partners .container {
     max-width: 100%;
@@ -2359,6 +2693,101 @@ html .--fw500 {
 
   .page-text-20 {
     font-size: 14px;
+  }
+
+  .programs.--masters .programs__item-grid {
+    position: relative;
+  }
+
+  .programs.--masters .programs__item-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .programs.--masters .programs__item.is-active .programs__item-info {
+    opacity: 1;
+  }
+
+  .programs .programs__mobile {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .cost .cost__form-price {
+    margin-top: 30px;
+  }
+
+  .cost .cost__form {
+    padding: 20px;
+  }
+
+  .cost .cost__form-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .cost .cost__form-submit {
+    max-width: 100%;
+  }
+
+  .cost {
+    padding-top: 0;
+  }
+
+  .cost__wrapper {
+    position: relative;
+  }
+
+  .cost .cost__wrap {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cost .cost__terms {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+  }
+
+  .detail .detail__info-header {
+    text-transform: initial;
+  }
+
+  .detail .detail__info {
+    padding: 20px;
+  }
+
+  .detail {
+    padding: 100px 0 50px;
+  }
+
+  .detail .detail__info {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+
+  .detail .detail__col.--main {
+    grid-column: initial;
+    padding-bottom: 10px;
+  }
+
+  .detail .detail__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .detail-decor {
+    display: none;
   }
 
   .programms .programms__headline {
