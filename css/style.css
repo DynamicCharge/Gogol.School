@@ -2265,6 +2265,11 @@ html .--fw500 {
   display: block;
 }
 
+.detail .detail__col-val span {
+  color: #000;
+  font-weight: inherit;
+}
+
 .detail .detail__col-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2299,6 +2304,79 @@ html .--fw500 {
 
 .detail .detail__info-header {
   margin: 0;
+}
+
+.schedule {
+  padding: 75px 0;
+}
+
+.schedule .schedule__desc {
+  margin-bottom: 40px;
+}
+
+.schedule .schedule__cal-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.schedule .schedule__cal-header__item {
+  color: #a6a7ab;
+}
+
+.schedule .schedule__cal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.schedule .schedule__cal-item {
+  padding: 10px 0;
+  border-top: 1px solid #D2D3D5;
+}
+
+.schedule .schedule__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 155px;
+}
+
+.schedule .schedule__num {
+  margin: 0;
+  color: #a6a7ab;
+}
+
+.schedule .schedule__num span {
+  display: none;
+  font: inherit;
+  font-weight: inherit;
+}
+
+.schedule .schedule__duration {
+  color: #a6a7ab;
+  display: block;
+}
+
+.schedule .schedule__time {
+  font-size: 20px;
+}
+
+.schedule .schedule__epilog {
+  margin-top: 40px;
+  color: #a6a7ab;
 }
 
 .cost {
@@ -2661,6 +2739,14 @@ html .--fw500 {
     margin-bottom: 40px;
   }
 
+  .cost {
+    padding: 50px 0;
+  }
+
+  .schedule {
+    padding: 50px 0;
+  }
+
   .programms .programs__filters {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -2793,6 +2879,48 @@ html .--fw500 {
 
   .page-text-20 {
     font-size: 14px;
+  }
+
+  .schedule .schedule__num span {
+    display: inline;
+  }
+
+  .schedule .schedule__num {
+    font-size: 20px;
+  }
+
+  .schedule .schedule__cal-header {
+    display: none;
+  }
+
+  .schedule .schedule__cal {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .schedule .schedule__cal-item:not(.--mob) {
+    display: none;
+  }
+
+  .schedule .schedule__body {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .schedule .schedule__duration {
+    margin-bottom: 11px;
   }
 
   .cost .cost__terms.--desc {
