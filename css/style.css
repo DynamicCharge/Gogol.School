@@ -1385,6 +1385,11 @@ html .--fw500 {
   padding-bottom: 75px;
 }
 
+.programms.--detail {
+  padding-top: 75px;
+  padding-bottom: 150px;
+}
+
 .programms .programms__decor {
   position: absolute;
   top: -570px;
@@ -1731,6 +1736,10 @@ html .--fw500 {
 .process {
   padding: 150px 0;
   position: relative;
+}
+
+.process.--detail {
+  padding: 75px 0;
 }
 
 .process .process__decor {
@@ -2256,6 +2265,25 @@ html .--fw500 {
   display: block;
 }
 
+.detail .detail__col-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.detail .detail__col-link {
+  padding: 4px 15px;
+  background: #EBA79A;
+  color: #ededef;
+  border-radius: 5px;
+}
+
 .detail .detail__info {
   display: -ms-grid;
   display: grid;
@@ -2301,6 +2329,7 @@ html .--fw500 {
 .cost .cost__info {
   max-width: 336px;
   width: 100%;
+  margin-bottom: 37px;
 }
 
 .cost .cost__name {
@@ -2339,11 +2368,54 @@ html .--fw500 {
   margin-top: auto;
 }
 
+.cost .cost__terms a {
+  font: inherit;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.cost .cost__terms.--mob {
+  display: none;
+}
+
+.cost .cost-price__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cost .cost-price__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.cost .cost-price__item.is-active .cost-price__value {
+  color: #d64e34;
+}
+
+.cost .cost-price__name {
+  color: #a6a7ab;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.cost .cost-price__value {
+  margin: 0;
+  color: #D2D3D5;
+}
+
 .cost .cost__form {
   padding: 25px;
   border-radius: 10px 0 10px 10px;
   background: #eba79a;
   color: #fff;
+  height: 100%;
 }
 
 .cost .cost__form-wrapper {
@@ -2352,6 +2424,7 @@ html .--fw500 {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 102px;
+  height: 100%;
 }
 
 .cost .cost__form-fields {
@@ -2400,6 +2473,16 @@ html .--fw500 {
 
 .cost .cost__form-type__wrap:not(:last-child) {
   margin-bottom: 13px;
+}
+
+.cost .cost__form-types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .cost .cost__form-text {
@@ -2473,6 +2556,23 @@ html .--fw500 {
   line-height: 16px;
 }
 
+.cost .cost__form-desc a {
+  font: inherit;
+  color: inherit;
+  position: relative;
+}
+
+.cost .cost__form-desc a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .cost .cost__form-price {
   margin-bottom: 0;
   color: #d64e34;
@@ -2482,7 +2582,7 @@ html .--fw500 {
 .cost .cost__form-submit {
   max-width: 270px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: auto;
 }
 
 .cost .gift {
@@ -2531,7 +2631,7 @@ html .--fw500 {
 }
 
 .detail-decor.--2 {
-  bottom: 710px;
+  top: 2510px;
   left: 0;
 }
 
@@ -2695,6 +2795,36 @@ html .--fw500 {
     font-size: 14px;
   }
 
+  .cost .cost__terms.--desc {
+    display: none;
+  }
+
+  .cost .cost__terms.--mob {
+    display: block;
+  }
+
+  .cost .cost-price__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+  }
+
+  .cost .cost-price__item .cost-price__value {
+    font-size: 20px;
+  }
+
+  .cost .cost-price__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
   .programs.--masters .programs__item-grid {
     position: relative;
   }
@@ -2749,12 +2879,6 @@ html .--fw500 {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 40px;
-  }
-
-  .cost .cost__terms {
-    position: absolute;
-    bottom: -70px;
-    left: 0;
   }
 
   .detail .detail__info-header {
