@@ -2130,12 +2130,12 @@ html .--fw500 {
   color: #a6a7ab;
 }
 
-.--header-grey .header__btn {
+.--header-grey .header__btn:not(.--mobile-only) {
   border-color: #A6A7AB;
   color: #a6a7ab;
 }
 
-.--header-grey .header__btn:hover {
+.--header-grey .header__btn:not(.--mobile-only):hover {
   background: #a6a7ab;
   color: #fff;
 }
