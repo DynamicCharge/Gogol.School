@@ -895,7 +895,7 @@ button,
 }
 
 .--mobile-only {
-  display: none;
+  display: none !important;
 }
 
 .main-nav__list {
@@ -2135,6 +2135,11 @@ html .--fw500 {
   color: #a6a7ab;
 }
 
+.--header-grey .header__btn:hover {
+  background: #a6a7ab;
+  color: #fff;
+}
+
 .smi {
   padding: 75px 0;
 }
@@ -3272,7 +3277,7 @@ html .--fw500 {
 
 @media screen and (max-width: 1050px) {
   .page-btn.--mobile-only {
-    display: block;
+    display: block !important;
     margin-left: auto;
     padding: 14px 21px !important;
   }
