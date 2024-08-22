@@ -456,9 +456,22 @@
               data = $this.attr('data-master'),
               $target = $(`[data-detail="${data}"]`);
 
-            $('.specs__empty').addClass('--hidden');
-            $(`[data-detail]`).removeClass('is-active');
-            $target.addClass('is-active');
+
+            if (window.innerWidth < 1050) {
+              let targetItem = $target.html(),
+                targetWrapper = `<div class="specs__detail" data-detail="${data}">${targetItem}</div>`;
+
+              let parentCol = $this.parents('.specs__col');
+
+              $('.specs__items').find('.specs__detail').remove();
+              parentCol.append(targetWrapper);
+
+            } else {
+              $('.specs__empty').addClass('--hidden');
+              $(`[data-detail]`).removeClass('is-active');
+              $target.addClass('is-active');
+            }
+
           });
         });
       </script>
