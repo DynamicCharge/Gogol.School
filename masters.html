@@ -545,6 +545,9 @@
               $('.specs__items').find('.specs__detail').remove();
               parentCol.append(targetWrapper);
 
+              $('[data-master]').removeClass('is-active');
+              $this.addClass('is-active');
+
             } else {
               $('.specs__empty').addClass('--hidden');
               $(`[data-detail]`).removeClass('is-active');
