@@ -341,49 +341,109 @@
           </div>
         </div>
       </section>
+
       <section class="smi">
         <div class="container">
           <div class="smi__wrapper">
-            <h2 class="smi__header page-h2">сми о нас</h2>
-            <div class="smi__items">
+            <div class="smi__headline">
+              <h2 class="smi__header page-h2">сми о нас</h2>
+              <div class="smi__nav">
+                <div class="smi_arrow --prev"><img src="./img/svg/slider-arrow.svg" alt=""></div>                
+                <div class="smi_arrow --next"><img src="./img/svg/slider-arrow.svg" alt=""></div>                
+              </div>
+            </div>
+            <div class="smi__items swiper">
+              <div class="swiper-wrapper">
+                <a href="" class="smi__item swiper-slide  --color-white --black">
+                  <span class="smi__item-name page-text-14 --uppercase --fw700">МОСКВИЧ MAG</span>
+                  <p class="smi__item-text page-text-14 --fw700">
+                    Почему вы должны меня знать: основатель творческой лаборатории Gogol School Илья
+                    Ромашко
+                  </p>
 
-              <a href="" class="smi__item  --color-white --black">
-                <span class="smi__item-name page-text-14 --uppercase --fw700">МОСКВИЧ MAG</span>
-                <p class="smi__item-text page-text-14 --fw700">
-                  Почему вы должны меня знать: основатель творческой лаборатории Gogol School Илья
-                  Ромашко
-                </p>
-              </a>
-              <a href="" class="smi__item --color-white --green">
-                <span class="smi__item-name page-text-14 --uppercase --fw700">SEASONS</span>
-                <p class="smi__item-text page-text-14 --fw700">
-                  Верю! Шесть театральных курсов для мечтающих о сцене
-                </p>
-              </a>
-              <a href="" class="smi__item --white">
-                <span class="smi__item-name page-text-14 --uppercase --fw700">SEASONS</span>
-                <p class="smi__item-text page-text-14 --fw700">
-                  Слышать движение своей души: зачем учиться в театральной студии
-                </p>
-              </a>
-              <a href="" class="smi__item --color-white --black">
-                <span class="smi__item-name page-text-14 --uppercase --fw700">МОСКВИЧ MAG</span>
-                <p class="smi__item-text page-text-14 --fw700">
-                  Красиво спорить и не экать: 8 курсов для развития речи
-                </p>
-              </a>
+                  <div class="smi__item-hover page-text-14 --fw700">
+                    <p>Актерские техники отлично адаптируются под запросы бизнеса, где важным качеством является умение эффективно выстраивать коммуникацию и доверительные отношения в долгосрочной перспективе.</p>
+                  </div>
+                </a>
+                <a href="" class="smi__item swiper-slide --color-white --green">
+                  <span class="smi__item-name page-text-14 --uppercase --fw700">SEASONS</span>
+                  <p class="smi__item-text page-text-14 --fw700">
+                    Верю! Шесть театральных курсов для мечтающих о сцене
+                  </p>
+                  
+                  <div class="smi__item-hover page-text-14 --fw700">
+                    <p>Актерские техники отлично адаптируются под запросы бизнеса, где важным качеством является умение эффективно выстраивать коммуникацию и доверительные отношения в долгосрочной перспективе.</p>
+                  </div>
+                </a>
+                <a href="" class="smi__item swiper-slide --white">
+                  <span class="smi__item-name page-text-14 --uppercase --fw700">SEASONS</span>
+                  <p class="smi__item-text page-text-14 --fw700">
+                    Слышать движение своей души: зачем учиться в театральной студии
+                  </p>
+                  
+                  <div class="smi__item-hover page-text-14 --fw700">
+                    <p>Актерские техники отлично адаптируются под запросы бизнеса, где важным качеством является умение эффективно выстраивать коммуникацию и доверительные отношения в долгосрочной перспективе.</p>
+                  </div>
+                </a>
+                <a href="" class="smi__item swiper-slide --color-white --black">
+                  <span class="smi__item-name page-text-14 --uppercase --fw700">МОСКВИЧ MAG</span>
+                  <p class="smi__item-text page-text-14 --fw700">
+                    Красиво спорить и не экать: 8 курсов для развития речи
+                  </p>
+                  
+                  <div class="smi__item-hover page-text-14 --fw700">
+                    <p>Актерские техники отлично адаптируются под запросы бизнеса, где важным качеством является умение эффективно выстраивать коммуникацию и доверительные отношения в долгосрочной перспективе.</p>
+                  </div>
+                </a>
+                <a href="" class="smi__item swiper-slide --color-white --black">
+                  <span class="smi__item-name page-text-14 --uppercase --fw700">МОСКВИЧ MAG</span>
+                  <p class="smi__item-text page-text-14 --fw700">
+                    Красиво спорить и не экать: 8 курсов для развития речи
+                  </p>
+                  
+                  <div class="smi__item-hover page-text-14 --fw700">
+                    <p>Актерские техники отлично адаптируются под запросы бизнеса, где важным качеством является умение эффективно выстраивать коммуникацию и доверительные отношения в долгосрочной перспективе.</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            let smiSliders = document.querySelectorAll('.smi__items');
+            if(smiSliders) {
+              smiSliders.forEach(function(slider) {
+                let swiper = new Swiper(slider, {
+                  spaceBetween: 10,
+                  loop: true,
+                  navigation: {
+                    prevEl: slider.closest('.smi__wrapper').querySelector('.--prev'),
+                    nextEl: slider.closest('.smi__wrapper').querySelector('.--next')
+                  },
+                  breakpoints: {
+                    0: {
+                      slidesPerView: 1,
+                    },
+                    1050: {
+                      slidesPerView: 4,
+                    }
+                  }
+                });
+              });
+            }
+          });
+        </script>
       </section>
+
       <section class="reviews">
         <div class="container">
           <div class="reviews__wrapper">
             <div class="reviews__headline">
               <h2 class="reviews__header page-h2">отзывы</h2>
               <div class="reviews__nav">
-                <div class="reviews__arrow --prev"><img src="../img/svg/slider-arrow.svg" alt=""></div>
-                <div class="reviews__arrow --next"><img src="../img/svg/slider-arrow.svg" alt=""></div>
+                <div class="reviews__arrow --prev"><img src="./img/svg/slider-arrow.svg" alt=""></div>
+                <div class="reviews__arrow --next"><img src="./img/svg/slider-arrow.svg" alt=""></div>
               </div>
             </div>
             <div class="reviews__wrap">
@@ -436,6 +496,7 @@
                         верю, что любовь мир и спасает. И спасёт.</span>
                     </div>
                   </div>
+                  
                 </div>
               </div>
             </div>

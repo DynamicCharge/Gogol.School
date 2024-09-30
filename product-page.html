@@ -277,6 +277,8 @@
           </div>
         </div>
       </section>
+
+
       <section class="cost">
         <div class="container">
           <div class="cost__wrapper">
@@ -299,6 +301,11 @@
                 <form action="" class="cost__form">
                   <div class="cost__form-wrapper">
                     <div class="cost__form-fields">
+
+                      <div class="cost__form-errors">
+                        
+                      </div>
+
                       <label class="cost__form-label">
                         <input type="text" name="name" placeholder="имя фамилия кириллицей" class="cost__form-input">
                       </label>
@@ -347,6 +354,11 @@
                         </div>
                       </div>
                       <label class="cost__form-type">
+                        <input type="checkbox" name="foreignCard" class="cost__form-radio">
+                        <span class="cost__form-custom"></span>
+                        <span class="cost__form-desc page-text-14 --fw700">иностранная карта</span>
+                      </label>
+                      <label class="cost__form-type">
                         <input type="checkbox" name="terms" class="cost__form-radio">
                         <span class="cost__form-custom"></span>
                         <span class="cost__form-desc page-text-14 --fw700">cогласен на обработку и хранение персональных данных карта</span>
@@ -394,6 +406,40 @@
           </div>
         </div>
       </section>
+      <script>
+        $('document').ready(function() {
+          $('.cost__form').on('submit', function(e) {
+            e.preventDefault();
+
+            let nameField = $('[name="name"]').val(),
+                email = $('[name="mail"]').val(),
+                phone = $('[name="phone"]').val(),
+                terms = $('[name="terms"]').prop('checked'),
+                paymentTerms = $('[name="payment-terms"]').prop('checked');
+            let errorBox = $('.cost__form-errors');
+
+            errorBox.empty();
+
+            if(nameField == '') {
+              errorBox.append('<span class="cost__form-error --fw700">Не заполнено поле "имя фамилия кириллицей"</span>');
+            }
+            if(email == '') {
+              errorBox.append('<span class="cost__form-error --fw700">Не заполнено поле "e-mail"</span>');
+            }
+            if(phone == '') {
+              errorBox.append('<span class="cost__form-error --fw700">Не заполнено поле "телефон"</span>');
+            }
+            if(!terms) {
+              errorBox.append('<span class="cost__form-error --fw700">Вы не отметили поле "Согласен на обработку и хранение персональных данных"</span>');
+            }
+            if(!paymentTerms) {
+              errorBox.append('<span class="cost__form-error --fw700">Вы не отметили поле "Согласен с условиями оплаты и возврата"</span>');
+            }
+          });
+        });
+      </script>
+
+
       <section class="programms --detail">
         <div class="container">
           <div class="programms__wrapper">
