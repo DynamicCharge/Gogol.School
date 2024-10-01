@@ -171,6 +171,10 @@ html{-webkit-text-size-adjust:100%}details,main{display:block}h1{margin:.67em 0;
 .specs__detail-info-text ul li:not(:last-child) {
     margin-bottom: 4px;
 }
+.container {
+    padding-left: 155px;
+    padding-right: 155px;
+}
 
 @media screen and (max-width: 1502px) {
     .container {
@@ -182,10 +186,7 @@ html{-webkit-text-size-adjust:100%}details,main{display:block}h1{margin:.67em 0;
     .header .header__wrapper {
         padding: 25px;
     }
-    .container {
-        padding-left: 155px;
-        padding-right: 155px;
-    }
+    
     .footer .footer__mail {
         font-size: 20px;
     }
