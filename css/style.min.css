@@ -171,15 +171,12 @@ html{-webkit-text-size-adjust:100%}details,main{display:block}h1{margin:.67em 0;
 .specs__detail-info-text ul li:not(:last-child) {
     margin-bottom: 4px;
 }
-.container {
-    padding-left: 155px;
-    padding-right: 155px;
-}
+
 
 @media screen and (max-width: 1502px) {
     .container {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 155px;
+        padding-right: 155px;
     }
 }
 @media screen and (max-width: 1440px) {
